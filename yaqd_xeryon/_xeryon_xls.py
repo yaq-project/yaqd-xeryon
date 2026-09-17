@@ -1,17 +1,18 @@
 __all__ = ["XeryonXLS"]
 
 import asyncio
-from typing import Dict, Any, List
+from ._xeryon import Xeryon
 
-from yaqd_core import IsDaemon
+from yaqd_core import HasTransformedPosition, IsHomeable, HasLimits, UsesUart
 
 
-class XeryonXLS(IsDaemon):
+class XeryonXLS(HasTransformedPosition, IsHomeable, HasLimits, UsesUart):
     _kind = "xeryon-xls"
 
     def __init__(self, name, config, config_filepath):
         super().__init__(name, config, config_filepath)
-        # Perform any unique initialization
+        self.controller = Xeryon(config["serial_port"], config["baud_rate"])
+
 
     async def update_state(self):
         """Continually monitor and update the current daemon state."""

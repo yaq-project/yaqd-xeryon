@@ -7,6 +7,8 @@
 [![ver](https://img.shields.io/badge/calver-YYYY.M.MICRO-blue)](https://calver.org/)
 [![log](https://img.shields.io/badge/change-log-informational)](https://github.com/yaq-project/yaqd_xeryon/-/blob/main/CHANGELOG.md)
 
+CURRENTLY A WORK IN PROGRESS
+
 yaq daemons for xeryon controllers
 
 This package contains the following daemon(s):
