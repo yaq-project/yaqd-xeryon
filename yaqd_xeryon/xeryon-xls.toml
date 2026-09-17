@@ -1,0 +1,17 @@
+protocol = "xeryon-xls"
+doc = ""
+traits = ["is-daemon"]
+
+[links]
+source = "https://github.com/yaq-project/yaqd_xeryon"
+bugtracker = "https://github.com/yaq-project/yaqd_xeryon/-/issues"
+
+[installation]
+PyPI = "https://pypi.org/project/yaqd_xeryon"
+
+[config]
+
+[state]
+
+[messages]
+
