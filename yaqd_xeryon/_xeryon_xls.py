@@ -13,7 +13,6 @@ class XeryonXLS(HasTransformedPosition, IsHomeable, HasLimits, UsesUart):
         super().__init__(name, config, config_filepath)
         self.controller = Xeryon(config["serial_port"], config["baud_rate"])
 
-
     async def update_state(self):
         """Continually monitor and update the current daemon state."""
         # If there is no state to monitor continuously, delete this function
